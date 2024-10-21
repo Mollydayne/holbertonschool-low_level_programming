@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-/*
-*Utilisation de la fonction main : pour afficher du texte
-*Arguments : pas d'arguments
-*Valeur du retour : 0
+/**
+*main - Entry point of the program
+*
+*Description: Prints the wanted text
+*Return: alaways 0
 */
 
 int main(void)
