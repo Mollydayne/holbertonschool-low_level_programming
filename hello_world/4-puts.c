@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /*
-*J'ai utilisé
-*la fonction puts
+*Utilisation de la fonction main : pour afficher du texte
+*Arguments : pas d'arguments
+*Valeur du retour : 0
 */
 
 int main(void)
