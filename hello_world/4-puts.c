@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*
- *J'ai utilisé
- * la fonction puts
+*J'ai utilisé
+*la fonction puts
 */
 
 int main(void)
