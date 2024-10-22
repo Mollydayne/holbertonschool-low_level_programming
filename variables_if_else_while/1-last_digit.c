@@ -19,11 +19,15 @@ lastDigit = (n % 10);
 
 if (lastDigit < 6)
 {
-printf("Last digit of %d is %d and is less than 6 and not 0 \n", n, lastDigit);
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
 }
 else if (lastDigit > 5)
 {
-printf("Last digit of %d is %d and is greater than 5 and not 0 \n", n, lastDigit);
+printf("Last digit of %d is %d and is greater than 5 and not 0\n", n, lastDigit);
+}
+else (lastDigit == 0)
+{
+printf("Last digit of %d is 0 and is 0\n", lastDigit);
 }
 return (0);
 }
