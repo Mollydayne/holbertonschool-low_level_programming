@@ -7,13 +7,6 @@
 *Return: alaways 0
 */
 
-#include <stdio.h>
-
-int _putchar(char c)
-{
-  return putchar(c);
-}
-
 int main(void)
 {
 _putchar('_');
