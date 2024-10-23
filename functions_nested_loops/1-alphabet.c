@@ -3,7 +3,7 @@
 /**
 *main - Entry point of the program
 *
-*print_alphabet: Prints alphabet in lowercase
+*function print_alphabet: Prints alphabet in lowercase
 *Return: nothing (void)
 */
 
