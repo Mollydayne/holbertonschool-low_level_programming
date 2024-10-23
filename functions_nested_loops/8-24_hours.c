@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 *jack_bauer- prints every minute
-* @n : number
+*
 *Return: n or -n
 */
 void jack_bauer(void)
