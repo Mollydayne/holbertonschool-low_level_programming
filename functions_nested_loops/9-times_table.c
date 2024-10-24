@@ -5,7 +5,7 @@
 *
 *Return: n or -n
 */
-void times_table(void);
+void times_table(void)
 {
 int chiffre;
 int multiplicateur;
@@ -17,8 +17,8 @@ for (multiplicateur = 0; multiplicateur <= 9 ; multiplicateur++)
 {
 resultat = chiffre * multiplicateur;
 if
-(chiffre != 0)
 {
+(chiffre != 0)
 _putchar(',');
 _putchar(' ');
 }
@@ -38,4 +38,5 @@ else
 _putchar(resultat + '0');
 }
 _putchar('\n');
+}
 }
