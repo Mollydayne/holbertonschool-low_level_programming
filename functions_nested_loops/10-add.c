@@ -6,8 +6,8 @@
 *Return: resultat
 */
 int add(int, int);
-int a, b, resultat;
 {
+int a, b, resultat;
 resultat = a + b;
 return (resultat);
 }
