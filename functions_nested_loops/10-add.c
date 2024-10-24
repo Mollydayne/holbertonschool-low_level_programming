@@ -5,7 +5,7 @@
 *
 *Return: resultat
 */
-int add(int, int);
+int add(int, int)
 {
 int a, b, resultat;
 resultat = a + b;
