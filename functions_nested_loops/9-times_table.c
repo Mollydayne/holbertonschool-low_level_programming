@@ -7,9 +7,7 @@
 */
 void times_table(void)
 {
-int chiffre;
-int multiplicateur;
-int resultat;
+  int chiffre, multiplicateur, resultat;
 
 for (chiffre = 0; chiffre <= 9; chiffre++)
 {
