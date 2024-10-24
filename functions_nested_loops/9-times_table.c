@@ -6,6 +6,7 @@
 *Return: n or -n
 */
 void times_table(void);
+{
 int chiffre;
 int multiplicateur;
 int resultat;
@@ -16,17 +17,17 @@ for (multiplicateur = 0; multiplicateur <= 9 ; multiplicateur++)
 {
 resultat = chiffre * multiplicateur;
 if
-(chiffre != 0);
+(chiffre != 0)
 {
 _putchar(',');
 _putchar(' ');
 }
 if
-(resultat < 10);
+(resultat < 10)
 _putchar(' ');
 }
 if
-(resultat > 9);
+(resultat > 9)
 {
 _putchar((resultat / 10) + '0');
 _putchar((resultat % 10) + '0');
