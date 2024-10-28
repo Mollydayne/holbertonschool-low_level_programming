@@ -15,11 +15,11 @@ return;
 }
 for (a = 1; a <= size; a++)
 {
-for (b = 0; b < size - b; b++)
+for (b = 0; b < size - a; b++)
 {
 _putchar(' ');
 }
-for (b=0; b < a; a++)
+for (b=0; b < a; b++)
 {
   _putchar('#');
 }
