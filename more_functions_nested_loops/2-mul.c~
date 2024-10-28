@@ -1,0 +1,11 @@
+#include  <stdio.h>
+#include "main.h"
+/**
+*mul - multiply two integers
+* @c : character that need to be checked
+*Return: 0 or 1
+*/
+int mul(int a, int b)
+{
+return (a * b);
+}
