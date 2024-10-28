@@ -15,5 +15,6 @@ if (ch == '2' || ch == '4')
 continue;
 }
 _putchar(ch);
+}
 _putchar('\n');
 }
