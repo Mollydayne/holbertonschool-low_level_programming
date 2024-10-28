@@ -19,9 +19,9 @@ for (b = 0; b < size - a; b++)
 {
 _putchar(' ');
 }
-for (b=0; b < a; b++)
+for (b = 0; b < a; b++)
 {
-  _putchar('#');
+_putchar('#');
 }
 _putchar('\n');
 }
