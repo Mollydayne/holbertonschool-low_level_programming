@@ -3,16 +3,22 @@
 /**
 * puts_half - prints half the length of a string
 *@str : pointer to string
-* Return: len / 2
+* Return: void
 */
 
 void puts_half(char *str)
 {
 int len = 0;
-while (*str != 0)
+char *start;
+while (*str != '\0')
 {
-str++;
 len++;
+str++;
 }
-return (len / 2);
+start = str - (len / 2);
+for (int i = len / 2; i < len; i++)
+{
+_putchar(start[i])
+}
+_putchar('\n')
 }
