@@ -17,7 +17,7 @@ len++;
 str++;
 }
 start = str - (len / 2);
-for (int i = len / 2; i < len; i++)
+for (i = len / 2; i < len; i++)
 {
 _putchar(start[i]);
 }
