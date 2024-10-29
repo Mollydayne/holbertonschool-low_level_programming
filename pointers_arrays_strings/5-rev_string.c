@@ -18,7 +18,7 @@ end--;
 while (start < end)
 {
 tmp = *start;
-*start = *end
+*start = *end;
 *end = tmp;
 start++;
 end--;
