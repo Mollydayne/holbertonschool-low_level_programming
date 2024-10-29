@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* _strlen - print the length of a string
-*@s : pointer to stock
-* Return: strlen
+* puts_half - prints half the length of a string
+*@str : pointer to string
+* Return: len / 2
 */
 
-int _strlen(char *s)
+void puts_half(char *str)
 {
 int len = 0;
-while (*s != 0)
+while (*str != 0)
 {
-s++;
+str++;
 len++;
 }
 return (len / 2);
