@@ -8,16 +8,15 @@
 
 void puts_half(char *str)
 {
-int i;
 int len = 0;
-char *start;
+char *start = str;
 while (*str != '\0')
 {
 len++;
 str++;
 }
-start = str - (len / 2);
-for (i = len / 2; i < len; i++)
+start = str + (len / 2);
+for (int i = len / 2; i < len; i++)
 {
 _putchar(start[i]);
 }
