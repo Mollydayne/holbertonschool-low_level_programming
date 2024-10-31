@@ -2,23 +2,19 @@
 #include "main.h"
 
 /**
-* _strncat - concatenate two strings
+* _strncpy - copy strings
 *@dest : string 1
 *@src : string 2
 *@n : number of caracters to add
-* Return: start
+* Return: dest
 */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-char *start = dest;
-while (*dest)
+int i = 0;
+for (i = 0; src[i] != '\0'; i++)
 {
-dest++;
+dest[i] = src[i];
 }
-while (n-- > 0 && *src)
-{
-*dest++ = *src++;
-}
-*dest = '\0';
-return (start);
+dest[i] = '\0';
+return dest;
 }
