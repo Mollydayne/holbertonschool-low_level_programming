@@ -5,19 +5,16 @@
 * _strcat - concatenate two strings
 *@dest : string 1
 *@src : string 2
-* Return: void (no return value)
+*@n : 
+* Return: string copied
 */
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
-char *start = dest;
-while (*dest)
+int i = 0;
+for (i = 0; src[i] != '\0'; i++)
 {
-++dest;
+dest[i] = src[i];
 }
-while (*src)
-{
-*dest++ = *src++;
-}
-*dest = '\0';
-return (start);
+dest[i] = '\0';
+return dest;
 }
