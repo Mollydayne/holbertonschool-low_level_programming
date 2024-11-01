@@ -5,7 +5,7 @@
 * *cap_string - to transform a string in uppercase
 *
 *@s : string to be changed
-* Return: char s
+* Return: modified string
 */
 char *cap_string(char *s)
 {
@@ -16,9 +16,10 @@ if (*ptr >= 'a' && *ptr <= 'z')
 {
 *ptr -= 32;
 }
+int j;
 while (*ptr != '\0')
 {
-for (int j = 0; j < 13; j++)
+for (j = 0; j < 13; j++)
 {
 if (*ptr == spe[j])
 {
