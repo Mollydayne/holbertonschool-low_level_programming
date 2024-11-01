@@ -12,11 +12,11 @@ char *cap_string(char *s)
 char *ptr = s;
 char spe[13] = {' ', '\t', '\n', ',',
 ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+int j;
 if (*ptr >= 'a' && *ptr <= 'z')
 {
 *ptr -= 32;
 }
-int j;
 while (*ptr != '\0')
 {
 for (j = 0; j < 13; j++)
