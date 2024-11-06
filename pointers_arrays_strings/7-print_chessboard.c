@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
-* print_chessboard : prints a chessboard in 8x8
-*@a : 2D array
+* print_chessboard - prints a chessboard in 8x8
+*@a : 2D array representing the chessboard
 *
-* Return: void
+* Return: nothing
 */
 void print_chessboard(char (*a)[8])
 {
