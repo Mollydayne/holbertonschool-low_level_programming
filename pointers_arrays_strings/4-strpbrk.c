@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
-* *_strpbk - searches for a car that matches accept
-*@s : string where we search
-*@accept : range of caracters we are looking for
+* *_strpbrk - searches a string for a set of bytes
+*@s : string to search in
+*@accept : string containing the bytes to search for
 *
-* Return: count
+* Return: a pointer to occurence or NULL
 */
 char *_strpbrk(char *s, char *accept)
 {
