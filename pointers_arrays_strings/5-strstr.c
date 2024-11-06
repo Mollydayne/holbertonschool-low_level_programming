@@ -2,15 +2,16 @@
 #include "main.h"
 
 /**
-* *_strstr - locates a substring
+* _strstr - locates a substring
 *@haystack : principal string
 *@needle : substring we want to locate
 *
-* Return: substring
+* Return: pointer to beginning of substring or NULL
 */
 char *_strstr(char *haystack, char *needle)
 {
 if (*needle == '\0')
+{
 return (haystack);
 }
 while (*haystack)
