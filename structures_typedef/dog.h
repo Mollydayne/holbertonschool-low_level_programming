@@ -6,7 +6,7 @@
  * @name: name of a cute doggo
  * @age: age of doggo
  * @owner: owner of a fantastic doggo
- * 
+ *
  */
 
 struct dog
