@@ -6,7 +6,6 @@
 /**
  * free_dog- frees the doggos
  *
- * @name: Name of the dog
  * @d: dogs we want to free
  *
  * Return: pointer to new dog_t, or NULL if it fails
