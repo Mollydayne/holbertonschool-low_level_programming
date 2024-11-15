@@ -15,15 +15,17 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *ArrayMem;
 unsigned int i;
-char *filler;
+char *ptr;
 
-if (nmemb || size == 0)
+if (nmemb == 0 || size == 0)
 return (NULL);
+
 ArrayMem = malloc(size * nmemb);
 if (ArrayMem == NULL)
 return (NULL);
-filler = ArrayMem;
+
+ptr = ArrayMem;
 for (i = 0; i < (size * nmemb); i++)
-filler[i] = '\0';
+ptr[i] = '\0';
 return (ArrayMem);
 }
