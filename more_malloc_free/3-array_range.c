@@ -23,6 +23,9 @@ int size;
 if (min > max)
 return (NULL);
 
+if (max - min + 1 <= 0)
+return (NULL);
+
 size = max - min + 1;
 
 array = malloc(size *sizeof(int));
