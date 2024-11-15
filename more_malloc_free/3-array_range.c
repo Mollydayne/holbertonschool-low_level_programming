@@ -32,7 +32,7 @@ array = malloc(size *sizeof(int));
 if (array == NULL)
 return (NULL);
 
-for (i = 0; i < size; i++)
-array[i] = min + 1;
+for (i = 0; min <= max; i++)
+array[i] = min++;
 return (array);
 }
