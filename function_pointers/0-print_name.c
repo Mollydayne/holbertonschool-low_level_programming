@@ -14,10 +14,6 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-int i;
-if (name == NULL || f == NULL)
-return;
-for (i = 0; name[i] != '\0'; i++)
-_putchar(name[i]);
-return;
+if (name != NULL || f != NULL)
+return f(name);
 }
