@@ -11,8 +11,7 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-if (s == NULL)
-return (NULL);
+int i = 0;
 
 op_t ops[] = {
 {"+", op_add},
@@ -23,7 +22,6 @@ op_t ops[] = {
 {NULL, NULL}
 };
 
-int i = 0;
 while (ops[i].op)
 {
 if (strcmp(ops[i].op, s) == 0)
