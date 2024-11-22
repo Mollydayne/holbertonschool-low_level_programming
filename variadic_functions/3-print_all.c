@@ -68,8 +68,6 @@ va_list args;
 unsigned int i = 0, j;
 char *separator = "";
 va_start(args, format);
-if (!format)
-return;
 while (format[i])
 {
 j = 0;
