@@ -14,6 +14,7 @@ unsigned int i = 0;
 va_list args;
 
 if (n == 0)
+printf("\n");
 return;
 
 va_start(args, n);
