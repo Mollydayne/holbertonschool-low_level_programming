@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "stdio.h": "c"
-    }
+    },
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnPaste": true
 }
