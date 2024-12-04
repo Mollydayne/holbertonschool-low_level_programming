@@ -66,5 +66,5 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 0-print_dlistint.c -o print_list
 
 ## 📝 Author
 
--  :sakura: **Clarisse Perez** :sakura:  
+-  :cherry_blossom: **Clarisse Perez** :cherry_blossom:
 
