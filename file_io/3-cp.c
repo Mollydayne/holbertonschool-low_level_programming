@@ -14,8 +14,8 @@
 
 void error_exit(int exit_code, const char *format, const char *value)
 {
-	dprintf(STDERR_FILENO, format, value);
-	exit(exit_code);
+    dprintf(STDERR_FILENO, format, value);
+    exit(exit_code);
 }
 
 /**
@@ -28,33 +28,33 @@ void error_exit(int exit_code, const char *format, const char *value)
 
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, read_bytes, written_bytes;
-	char buffer[BUFFER_SIZE];
+    int file_from, file_to, read_bytes, written_bytes;
+    char buffer[BUFFER_SIZE];
 
-	if (argc != 3)
-		error_exit(97, "Usage: cp file_from file_to\n", NULL);
+    if (argc != 3)
+        error_exit(97, "Usage: cp file_from file_to\n", NULL);
 
-	file_from = open(argv[1], O_RDONLY);
-	if (file_from == -1)
-		error_exit(98, "Error: Can't read from file %s\n", argv[1]);
+    file_from = open(argv[1], O_RDONLY);
+    if (file_from == -1)
+        error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	if (file_to == -1)
-		error_exit(99, "Error: Can't write to %s\n", argv[2]);
+    file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+    if (file_to == -1)
+        error_exit(99, "Error: Can't write to %s\n", argv[2]);
 
-	while ((read_bytes = read(file_from, buffer, BUFFER_SIZE)) > 0)
-	{
-		written_bytes = write(file_to, buffer, read_bytes);
-		if (written_bytes == -1 || written_bytes != read_bytes)
-			error_exit(99, "Error: Can't write to %s\n", argv[2]);
-	}
-	if (read_bytes < 0)
-		error_exit(98, "Error: Can't read from file %s\n", argv[1]);
+    while ((read_bytes = read(file_from, buffer, BUFFER_SIZE)) > 0)
+    {
+        written_bytes = write(file_to, buffer, read_bytes);
+        if (written_bytes == -1 || written_bytes != read_bytes)
+            error_exit(99, "Error: Can't write to %s\n", argv[2]);
+    }
+    if (read_bytes == -1)
+        error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
-	if (close(file_from) == -1)
-		error_exit(100, "Error: Can't close fd %d\n", file_from);
-	if (close(file_to) == -1)
-		error_exit(100, "Error: Can't close fd %d\n", file_to);
+    if (close(file_from) == -1)
+        error_exit(100, "Error: Can't close fd %d\n", "file_from");
+    if (close(file_to) == -1)
+        error_exit(100, "Error: Can't close fd %d\n", "file_to");
 
-	return (0);
+    return (0);
 }
