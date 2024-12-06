@@ -48,13 +48,13 @@ int main(int argc, char *argv[])
 		if (written_bytes == -1 || written_bytes != read_bytes)
 			error_exit(99, "Error: Can't write to %s\n", argv[2]);
 	}
-	if (read_bytes == -1)
+	if (read_bytes < 0)
 		error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
 	if (close(file_from) == -1)
-		error_exit(100, "Error: Can't close fd %d\n", "file_from");
+		error_exit(100, "Error: Can't close fd %d\n", file_from);
 	if (close(file_to) == -1)
-		error_exit(100, "Error: Can't close fd %d\n", "file_to");
+		error_exit(100, "Error: Can't close fd %d\n", file_to);
 
 	return (0);
 }
